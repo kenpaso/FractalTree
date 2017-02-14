@@ -12,9 +12,10 @@ public void draw()
 {   
 	background(255,255,255);   
 	stroke(0,255,0);   
-	image(img, 270, 380, 100, 100);
 	line(320,400,320,380);   
 	drawBranches(320,380,100,3*Math.PI/2);  
+	image(img, 270, 380, 100, 100);
+
 } 
 
 public void drawBranches(int x,int y, double branchLength, double angle) 
