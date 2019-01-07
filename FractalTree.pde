@@ -33,11 +33,11 @@ public void draw()
  		text("Downloading Data",20,450);
 
  		fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
- 		ellipse(247, 448, 5, 5);
+ 		ellipse(245, 448, 5, 5);
  		fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
- 		ellipse(257, 448, 5, 5);
+ 		ellipse(255, 448, 5, 5);
  		fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
- 		ellipse(267, 448, 5, 5);
+ 		ellipse(265, 448, 5, 5);
  
  		}	
 	}
