@@ -19,6 +19,27 @@ public void draw()
 	{
 		background(0);
 		drawBranches(mouseX,mouseY,100,3*Math.PI/2); 
+		textSize(10);
+ 		fill(255);
+ 		text("now click",20,450);
+
+		if(mousePressed == true)
+ 		{
+ 		background(0);
+		drawBranches(mouseX,mouseY,100,3*Math.PI/2); 
+
+ 		textSize(25);
+ 		fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+ 		text("Downloading Data",20,450);
+
+ 		fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+ 		ellipse(250, 448, 5, 5);
+ 		fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+ 		ellipse(260, 448, 5, 5);
+ 		fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+ 		ellipse(270, 448, 5, 5);
+ 
+ 		}	
 	}
 	
 
