@@ -1,27 +1,31 @@
-PImage img;
 private double fractionLength = .8; 
 private int smallestBranch = 10; 
 private double branchAngle = .3567;  
 public void setup() 
 {   
 	size(640,480);    
-	noLoop(); 
-	img = loadImage("kaws.jpg");
+	//noLoop(); 
 } 
 public void draw() 
 {   
 	background(255,255,255);   
 	stroke(0,255,0);   
 	line(320,380,320,480);   
-	drawBranches(320,380,100,3*Math.PI/2);  
-	//image(img, 270, 380, 100, 100);
+	branchAngle=mouseY/(280/.25);
+	//drawBranches(320,380,100,3*Math.PI/2);  
+	drawBranches(mouseX,mouseY,100,3*Math.PI/2);  
+
+	if((mouseY > 380) && (mouseX < 325) && (mouseX > 315))
+	{
+		background(0);
+		drawBranches(mouseX,mouseY,100,3*Math.PI/2); 
+	}
+	
 
 } 
 
 public void drawBranches(int x,int y, double branchLength, double angle) 
-{   
-	//your code here    
-	
+{   	
 	stroke(0,(int)(Math.random()*255),0);
 	double angle1 = angle + branchAngle;
 	double angle2 = angle - branchAngle;
